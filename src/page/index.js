@@ -1,0 +1,5 @@
+export {default as Home} from './Home'
+export {default as Authen} from './Authen'
+export {default as Profile} from './Profile'
+export {default as Template} from './Template'
+export {default as Error} from './Error'

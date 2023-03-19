@@ -1,0 +1,40 @@
+.authen-form{
+  margin-top:10%;
+}
+
+*{color:rgb(220,220,220 )}
+
+body{
+  background-color: rgb(31 41 55 );
+}
+
+#side-bar{
+  height: 100%;
+ 
+}
+.main-content{
+  height: 100vh;
+  padding-top:80px;
+}
+.header{height: 80px;}
+.contact-img{
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.status-dot{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.contact-avatar{
+  overflow: hidden;
+}
+
+.contact-filter{height: 40px;}
+.contact-list-inner{padding-top: 40px;}
