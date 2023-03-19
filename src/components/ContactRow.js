@@ -14,7 +14,7 @@ const ContactRow = ({contact}) => {
     }
 
   return (
-    <div onClick={()=> setCurrentChat(contact.uid)} className={`border-b  ${contact.uid == current_chat ? 'bg-cyan-700' : 'bg-slate-900'} flex flex-row items-center gap-3 p-2 hover:bg-opacity-10 transition-all hover:bg-white cursor-pointer`}>
+    <div onClick={()=> setCurrentChat(contact.uid)} className={`border-b  ${contact.uid == current_chat ? 'bg-cyan-700' : 'bg-slate-900'} border-neutral-800 flex flex-row items-center gap-3 p-2 hover:bg-opacity-10 transition-all hover:bg-white cursor-pointer`}>
     <div className='contact-avatar relative flex flex-col'>
     <img src={contact.photoUrl} className="contact-img" />
     <span className={`status-dot ${contact.isLoggedIn == 1 ? 'bg-green-500' : 'bg-gray-500'}`}></span>

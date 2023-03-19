@@ -2,7 +2,7 @@ const { ISLOGIN, UPDATE_LOGIN_STATE, CURRENT_SIDEBAR, UPDATE_CURRENT_SIDEBAR, CU
 
 const initState = {
     login_state: window.localStorage.getItem(ISLOGIN) ?? false,
-    current_sidebar: window.localStorage.getItem(CURRENT_SIDEBAR) ?? "Home",
+    current_sidebar: window.localStorage.getItem(CURRENT_SIDEBAR) ?? "Profile",
     current_chat: window.localStorage.getItem(CURRENT_CHAT) ?? ""
 }
 

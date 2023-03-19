@@ -1,3 +1,6 @@
+import { UID } from "./constants"
+
+const current = window.localStorage.getItem(UID)
 export const data_contact = [
     {   
         fullname:"Kai",
@@ -41,48 +44,53 @@ export const data_contact = [
 export const data_message = [
     
     {
-        sender: "iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        sender: current,
         receiver :"1199",
         msg : "Heiii"
     },
     {
         sender: "1199",
-        receiver :"iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        receiver :current,
         msg : "How are you ?"
     },
     {
-        sender: "iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        sender: current,
         receiver :"1199",
         msg : "I'm fine"
     },
     {
         sender: "1199",
-        receiver :"iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        receiver :current,
         msg : "Sure"
     },
     {
-        sender: "iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        sender: current,
         receiver :"1199",
         msg : "When we can meet ?"
     },
     {
         sender: "1199",
-        receiver :"iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        receiver :current,
         msg : "I don't know. Maybe tonight?"
     },
     {
-        sender: "iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        sender: current,
         receiver :"1199",
         msg : "Perfect"
     },
     {
-        sender: "iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        sender: current,
         receiver :"3211",
         msg : "Morning, Harry"
     },
     {
         sender: "3211",
-        receiver :"iKJpqyurB4cp1enySN1rhZ0tJ0U2",
+        receiver :current,
         msg : "Hi. How can I help you?"
+    },
+    {
+        sender: current,
+        receiver :"3211",
+        msg : "Nothing, just test"
     },
 ]

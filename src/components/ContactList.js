@@ -5,9 +5,10 @@ import ContactRow from './ContactRow'
 const ContactList = () => {
 
     const [contacts, setContacts] = useState(data_contact ?? {})
-
+    const [loaded, setLoaded] = useState(false)
     useEffect(() => {
         setContacts(data_contact)
+        setLoaded(true)
     }, [contacts])
 
     return (
@@ -16,7 +17,10 @@ const ContactList = () => {
                 Sort
             </div>
             <div className='w-full h-full overflow-auto contact-list-inner'>
+
                 {
+                    loaded ?
+                    
                     contacts?.length > 0
                         ?
                         contacts?.map(contact => (
@@ -25,6 +29,8 @@ const ContactList = () => {
                         )
                         :
                         ""
+                    :
+                    "Loading..."
                 }
             </div>
 
